@@ -6,6 +6,7 @@ import DataAnalysis from "./pages/DataAnalysis";
 import SoftwareDevelopment from "./pages/SoftwareDevelopment";
 import PersonalProjects from "./pages/PersonalProjects";
 import Contact from "./pages/Contact";
+import ProjectDetails from "./pages/ProjectDetails";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/software-development" element={<SoftwareDevelopment />} />
         <Route path="/personal-projects" element={<PersonalProjects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/projects/:slug" element={<ProjectDetails />} />
       </Routes>
     </>
   );
