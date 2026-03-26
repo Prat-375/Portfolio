@@ -33,7 +33,7 @@ const journey = [
     year: "2019 – 2023",
     title: "Data Analysis & Machine Learning",
     text: "For my master’s thesis, I analyzed lion vocalizations by extracting audio features and applying machine learning models to classify different sound patterns.",
-    tags: ["Python", "R", "Machine Learning", "React", "Data Analysis"],
+    tags: ["Python", "R", "Machine Learning", "SQL", "ETL", "Data Visualization"],
     pointClass: "point-4",
     cardClass: "card-4",
   },
