@@ -1,30 +1,114 @@
 export const dataAnalysisProjects = [
   {
-    title: "Lion Vocalization Classification using Machine Learning",
-    description:
-      "Master’s thesis project focused on classifying lion vocalizations such as roars and grunts from real wildlife audio recordings. The workflow included audio preprocessing, feature extraction, manual labeling, and model comparison.",
-    tech: ["Python", "Librosa", "NumPy", "Scikit-learn", "TensorFlow", "Pandas"],
-    github: "#",
-    demo: "#",
+    title: "Lion Vocalization Classification",
+    slug: "lion-vocalization-classification",
     category: "data",
+    image: "/images/lion_roar.png",
+    github: "https://github.com/yourusername/lion-project",
+    sections: [
+      {
+        type: "text",
+        title: "Project Overview",
+        content:
+          "This project focused on analyzing lion vocalizations using machine learning techniques. The aim was to classify different lion sounds such as roars and grunts from recorded audio data.",
+      },
+      {
+        type: "image",
+        image: "/images/lion-overview.jpg",
+        alt: "Lion project overview",
+      },
+      {
+        type: "text",
+        title: "Data and Feature Extraction",
+        content:
+          "Audio samples were processed using Librosa, and features such as MFCCs were extracted to prepare the data for model training and evaluation.",
+      },
+      {
+        type: "image",
+        image: "/images/lion-mfcc.jpg",
+        alt: "MFCC visualization",
+      },
+      {
+        type: "text",
+        title: "Models and Results",
+        content:
+          "Multiple machine learning and deep learning approaches were compared, including SVM, CNN, and LSTM-based models, to evaluate classification performance.",
+      },
+    ],
   },
   {
-    title: "Sales Data Analysis Dashboard",
-    description:
-      "Data analysis project built to explore sales trends, category performance, and key business KPIs. The project focused on transforming raw data into clear insights through analysis and dashboard-style reporting.",
-    tech: ["Python", "Pandas", "SQL", "Matplotlib", "Power BI"],
-    github: "#",
-    demo: "#",
+    title: "Urban Sound Classification",
+    slug: "urban-sound-classification",
     category: "data",
+    image: "/images/urban_sound.png",
+    github: "https://github.com/yourusername/lion-project",
+    sections: [
+      {
+        type: "text",
+        title: "Project Overview",
+        content:
+          "This project focused on analyzing lion vocalizations using machine learning techniques. The aim was to classify different lion sounds such as roars and grunts from recorded audio data.",
+      },
+      {
+        type: "image",
+        image: "/images/lion-overview.jpg",
+        alt: "Lion project overview",
+      },
+      {
+        type: "text",
+        title: "Data and Feature Extraction",
+        content:
+          "Audio samples were processed using Librosa, and features such as MFCCs were extracted to prepare the data for model training and evaluation.",
+      },
+      {
+        type: "image",
+        image: "/images/lion-mfcc.jpg",
+        alt: "MFCC visualization",
+      },
+      {
+        type: "text",
+        title: "Models and Results",
+        content:
+          "Multiple machine learning and deep learning approaches were compared, including SVM, CNN, and LSTM-based models, to evaluate classification performance.",
+      },
+    ],
   },
   {
-    title: "Customer Churn Analysis",
-    description:
-      "Analytical project to identify patterns behind customer churn and highlight factors influencing retention. Included data cleaning, exploratory analysis, feature evaluation, and business-oriented interpretation of results.",
-    tech: ["Python", "Pandas", "Scikit-learn", "SQL", "Jupyter Notebook"],
-    github: "#",
-    demo: "#",
+    title: "Image Classification",
+    slug: "image-classification",
     category: "data",
+    image: "/images/image_analysis.png",
+    github: "https://github.com/yourusername/lion-project",
+    sections: [
+      {
+        type: "text",
+        title: "Project Overview",
+        content:
+          "This project focused on analyzing lion vocalizations using machine learning techniques. The aim was to classify different lion sounds such as roars and grunts from recorded audio data.",
+      },
+      {
+        type: "image",
+        image: "/images/lion-overview.jpg",
+        alt: "Lion project overview",
+      },
+      {
+        type: "text",
+        title: "Data and Feature Extraction",
+        content:
+          "Audio samples were processed using Librosa, and features such as MFCCs were extracted to prepare the data for model training and evaluation.",
+      },
+      {
+        type: "image",
+        image: "/images/lion-mfcc.jpg",
+        alt: "MFCC visualization",
+      },
+      {
+        type: "text",
+        title: "Models and Results",
+        content:
+          "Multiple machine learning and deep learning approaches were compared, including SVM, CNN, and LSTM-based models, to evaluate classification performance.",
+      },
+    ],
   },
 ];
 

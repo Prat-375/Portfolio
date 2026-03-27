@@ -8,12 +8,16 @@ export default function PersonalProjects() {
       <section className="content-section">
         <SectionTitle
           title="Personal Projects"
-          subtitle="Independent and experimental projects that show initiative."
+          subtitle="Independent experiments and projects built out of curiosity and practical exploration."
         />
 
         <div className="project-grid">
-          {personalProjects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
+          {personalProjects.map((project) => (
+            <ProjectCard
+              key={project.slug}
+              project={project}
+              detailsBasePath="/projects"
+            />
           ))}
         </div>
       </section>

@@ -12,8 +12,12 @@ export default function SoftwareDevelopment() {
         />
 
         <div className="project-grid">
-          {softwareProjects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
+          {softwareProjects.map((project) => (
+            <ProjectCard
+              key={project.slug}
+              project={project}
+              detailsBasePath="/projects"
+            />
           ))}
         </div>
       </section>

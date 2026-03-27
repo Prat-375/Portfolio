@@ -133,7 +133,7 @@ export default function Home() {
           <div className="spotlight-panel">
             <div className="spotlight-mini-card" onMouseMove={handleSpotlightMove}>
               <p className="spotlight-mini-label">Focus</p>
-              <p className="spotlight-mini-value">Data + Software Systems</p>
+              <p className="spotlight-mini-value">Data + Software Development</p>
               <span className="spotlight-mini-light"></span>
             </div>
 

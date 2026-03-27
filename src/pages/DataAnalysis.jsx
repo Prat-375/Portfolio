@@ -8,12 +8,16 @@ export default function DataAnalysis() {
       <section className="content-section">
         <SectionTitle
           title="Data Analysis Projects"
-          subtitle="Projects focused on data, machine learning, and business insights."
+          subtitle="Projects focused on data, machine learning, and analytical exploration."
         />
 
         <div className="project-grid">
-          {dataAnalysisProjects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
+          {dataAnalysisProjects.map((project) => (
+            <ProjectCard
+              key={project.slug}
+              project={project}
+              detailsBasePath="/data-analysis"
+            />
           ))}
         </div>
       </section>
