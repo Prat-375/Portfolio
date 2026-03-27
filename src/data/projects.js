@@ -110,13 +110,24 @@ export const personalProjects = [
     demo: "https://huggingface.co/spaces/prateekChetan/chatbot_prateek",
   },
   {
-    title: "DevOps Automation Utilities",
-    description:
-      "Collection of automation-oriented tasks and environment setup work focused on deployment support, Linux administration, and configuration management.",
+    title: "Todo WebApp",
+    slug: "todo-webapp",
     category: "personal",
-    tech: ["Ansible", "Docker", "Linux", "Git"],
-    github: "#",
-    demo: "#",
+    description:
+      "A simple productivity web app for creating, tracking, and managing daily tasks.",
+    longDescription:
+      "Developed a task management web application using Python and Streamlit to help users organize daily activities. Implemented features to add, display, and remove todos with persistent file-based storage. Designed a clean and interactive interface for quick task updates and improved personal productivity.",
+    tech: ["Python", "Streamlit", "File Handling"],
+    highlights: [
+      "Built an interactive task management interface using Streamlit",
+      "Implemented add and remove functionality for todos",
+      "Used file handling for persistent task storage",
+      "Managed application state with Streamlit session state",
+      "Designed a simple productivity-focused user experience",
+    ],
+    image: "images/todos.png",
+    github: "https://github.com/Prat-375/todo_webapp",
+    demo: "https://prat-375-todo-webapp-web-ksvcxa.streamlit.app/",
   },
   {
     title: "Mini Data Tools and Experiments",
