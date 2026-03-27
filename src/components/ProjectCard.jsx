@@ -38,7 +38,7 @@ export default function ProjectCard({ project, detailsBasePath = "/projects" }) 
 
           <Link
             to={`${detailsBasePath}/${project.slug}`}
-            className="card-btn secondary"
+            className="card-btn"
             state={{ from: project.category }}
           >
             Details
