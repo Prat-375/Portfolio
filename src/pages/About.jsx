@@ -81,8 +81,9 @@ export default function About() {
               C 620 540, 520 620, 540 820
               C 560 1010, 860 1060, 1140 1060
             "
-            className="journey-road-shadow"
+            className="journey-road-shadow road-animate-shadow"
           />
+
           <path
             d="
               M 70 120
@@ -92,8 +93,9 @@ export default function About() {
               C 620 540, 520 620, 540 820
               C 560 1010, 860 1060, 1140 1060
             "
-            className="journey-road"
+            className="journey-road road-animate-main"
           />
+
           <path
             d="
               M 70 120
@@ -103,7 +105,7 @@ export default function About() {
               C 620 540, 520 620, 540 820
               C 560 1010, 860 1060, 1140 1060
             "
-            className="journey-road-line"
+            className="journey-road-line road-animate-line"
           />
 
           </svg>

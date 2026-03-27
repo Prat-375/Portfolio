@@ -90,13 +90,24 @@ export const softwareProjects = [
 
 export const personalProjects = [
   {
-    title: "Interview Workflow Automation",
-    description:
-      "Process automation project designed to streamline candidate communication and tracking using forms, spreadsheet updates, and automated email notifications.",
-    tech: ["Power Automate", "Excel", "Forms", "Outlook"],
-    github: "#",
-    demo: "#",
+    title: "AI Chatbot (LangChain + Gemini)",
+    slug: "ai-chatbot",
     category: "personal",
+    description:
+      "An AI-powered chatbot that provides contextual conversations using Google Gemini and LangChain.",
+    longDescription:
+      "Developed an intelligent chatbot using LangChain and Google Gemini API to enable context-aware conversations. Implemented prompt engineering and message history handling to simulate human-like responses. Designed an interactive user interface using Gradio and deployed the application on Hugging Face Spaces for real-time access.",
+    tech: ["Python", "LangChain", "Google Gemini API", "Gradio", "LLM"],
+    highlights: [
+      "Built context-aware chatbot using LangChain message history",
+      "Integrated Google Gemini API for real-time AI responses",
+      "Applied prompt engineering for personality-driven responses",
+      "Designed interactive UI using Gradio",
+      "Deployed live on Hugging Face Spaces",
+    ],
+    image: "images/chatbot.png",
+    github: "https://github.com/Prat-375/Chatbot-Prateek",
+    demo: "https://huggingface.co/spaces/prateekChetan/chatbot_prateek",
   },
   {
     title: "DevOps Automation Utilities",

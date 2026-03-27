@@ -82,7 +82,7 @@ textarea {
 .navbar-container {
   max-width: 1200px;
   margin: auto;
-  padding: 18px 24px;
+  padding: 13px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,13 +120,13 @@ textarea {
 .page {
   max-width: 1200px;
   margin: auto;
-  padding: 40px 24px 80px;
+  padding: 2px 24px 40px;
   position: relative;
   z-index: 1;
 }
 
 .content-section {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 /* Decorative glows */
@@ -141,16 +141,16 @@ textarea {
 
 .home-glow-1 {
   width: 280px;
-  height: 280px;
-  top: 100px;
+  height: 150px;
+  top: 50px;
   right: 60px;
   background: rgba(255, 138, 31, 0.22);
 }
 
 .home-glow-2 {
   width: 240px;
-  height: 240px;
-  bottom: 80px;
+  height: 150px;
+  bottom: 40px;
   left: 40px;
   background: rgba(60, 207, 78, 0.18);
 }
@@ -1307,7 +1307,7 @@ textarea {
 .point-2 { top: 265px; left: 350px; background: linear-gradient(135deg, #b6ff7f, #82d84f); }
 .point-3 { top: 88px; left: 760px; background: linear-gradient(135deg, #ffd36e, #ffb347); }
 .point-4 { top: 450px; left: 720px; background: linear-gradient(135deg, #ff9ed1, #ff70ad); }
-.point-5 { top: 760px; left: 500px; background: linear-gradient(135deg, #d7b3ff, #a67cff); }
+.point-5 { top: 760px; left: 490px; background: linear-gradient(135deg, #d7b3ff, #a67cff); }
 .point-6 { top: 1020px; left: 940px; background: linear-gradient(135deg, #9ec2ff, #6d95ff); }
 
 .journey-card {
@@ -1473,3 +1473,56 @@ textarea {
     margin-bottom: 18px;
   }
 }
+
+.road-animate-shadow,
+.road-animate-main,
+.road-animate-line {
+  stroke-dasharray: 2600;
+  stroke-dashoffset: 2600;
+  animation: drawRoad 2.8s ease forwards;
+}
+
+.road-animate-shadow {
+  animation-delay: 0.05s;
+}
+
+.road-animate-main {
+  animation-delay: 0.15s;
+}
+
+.road-animate-line {
+  animation-delay: 0.28s;
+}
+
+/* make points/cards appear progressively */
+.point-1,
+.card-1 { animation: fadeInRoadItem 0.5s ease forwards; animation-delay: 0.20s; opacity: 0; }
+.point-2,
+.card-2 { animation: fadeInRoadItem 0.5s ease forwards; animation-delay: 0.20s; opacity: 0; }
+.point-3,
+.card-3 { animation: fadeInRoadItem 0.5s ease forwards; animation-delay: 0.20s; opacity: 0; }
+.point-4,
+.card-4 { animation: fadeInRoadItem 0.5s ease forwards; animation-delay: 0.20s; opacity: 0; }
+.point-5,
+.card-5 { animation: fadeInRoadItem 0.5s ease forwards; animation-delay: 0.20s; opacity: 0; }
+.point-6,
+.card-6 { animation: fadeInRoadItem 0.5s ease forwards; animation-delay: 0.20s; opacity: 0; }
+
+
+@keyframes drawRoad {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeInRoadItem {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
