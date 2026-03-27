@@ -5,7 +5,7 @@ const metaItems = [
   {
     icon: BarChart3,
     label: "Focus",
-    value: "Data Analysis • Software Systems",
+    value: "Data Analysis • Software Development",
   },
   {
     icon: Cog,
