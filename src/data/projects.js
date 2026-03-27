@@ -130,13 +130,24 @@ export const personalProjects = [
     demo: "https://prat-375-todo-webapp-web-ksvcxa.streamlit.app/",
   },
   {
-    title: "Mini Data Tools and Experiments",
-    description:
-      "Small hands-on projects created to test new ideas, explore tools, and build practical understanding through quick implementation and experimentation.",
+    title: "Weather Forecast WebApp",
+    slug: "weather-forecast-webapp",
     category: "personal",
-    tech: ["Python", "APIs", "React", "SQL"],
-    github: "#",
-    demo: "#",
+    description:
+      "An interactive weather application for exploring short-term temperature and sky forecasts by city.",
+    longDescription:
+      "Built a weather forecast web application using Python, Streamlit, and Plotly to provide city-based forecast insights for the upcoming days. Users can select the forecast range, view temperature trends through interactive charts, and explore sky conditions with weather icons alongside time labels. The project combines API-driven weather data retrieval with a clean visual interface for a better user experience.",
+    tech: ["Python", "Streamlit", "Plotly", "Weather API"],
+    highlights: [
+      "Developed a city-based weather forecast application using Streamlit",
+      "Created interactive temperature visualizations with Plotly",
+      "Added time-based sky condition display with custom weather icons",
+      "Integrated backend weather data retrieval and filtering",
+      "Built a clean dashboard-style interface for forecast exploration",
+    ],
+    image: "images/weather.png",
+    github: "https://github.com/Prat-375/Weather-Forecast-Data-Webapp",
+    demo: "https://weather-forecast-data-webapp-3hvxvuj7dun6knjitpdss4.streamlit.app/",
   },
 ];
 
