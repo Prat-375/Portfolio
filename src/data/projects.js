@@ -67,42 +67,145 @@ export const dataAnalysisProjects = [
     ],
   },
   {
-    title: "Urban Sound Classification",
-    slug: "urban-sound-classification",
-    category: "data",
-    image: "/images/urban_sound.png",
-    github: "https://github.com/yourusername/urban-sound-classification",
-    sections: [
-      {
-        type: "text",
-        title: "Project Overview",
-        content:
-          "This project focused on analyzing lion vocalizations using machine learning techniques. The aim was to classify different lion sounds such as roars and grunts from recorded audio data.",
-      },
-      {
-        type: "image",
-        image: "/images/lion-overview.jpg",
-        alt: "Lion project overview",
-      },
-      {
-        type: "text",
-        title: "Data and Feature Extraction",
-        content:
-          "Audio samples were processed using Librosa, and features such as MFCCs were extracted to prepare the data for model training and evaluation.",
-      },
-      {
-        type: "image",
-        image: "/images/lion-mfcc.jpg",
-        alt: "MFCC visualization",
-      },
-      {
-        type: "text",
-        title: "Models and Results",
-        content:
-          "Multiple machine learning and deep learning approaches were compared, including SVM, CNN, and LSTM-based models, to evaluate classification performance.",
-      },
-    ],
-  },
+  title: "Urban Sound Classification",
+  slug: "urban-sound-classification",
+  category: "data",
+  image: "/images/urban_sound.png",
+  github: "https://github.com/Prat-375/AudioAnalysis-UrbanSound8K",
+  subtitle:
+    "End-to-end analysis and classification of urban audio using waveform exploration, spectral features, and deep learning models (ANN & LSTM).",
+  tags: [
+    "Audio Analysis",
+    "Deep Learning",
+    "UrbanSound8K",
+    "Librosa",
+    "ANN",
+    "LSTM"
+  ],
+  metrics: [
+    { label: "Dataset", value: "UrbanSound8K" },
+    { label: "Samples", value: "8732 Audio Clips" },
+    { label: "Classes", value: "10 Urban Sounds" }
+  ],
+  sections: [
+    {
+      type: "text",
+      title: "Project Overview",
+      content:
+        "This project focused on classifying real-world urban sounds using deep learning techniques. The dataset includes 10 different environmental sound classes such as air conditioner, car horn, children playing, dog bark, drilling, engine idling, gun shot, jackhammer, siren, and street music."
+    },
+
+    {
+      type: "text",
+      title: "Dataset",
+      content:
+        "The UrbanSound8K dataset contains 8732 labeled audio clips of up to 4 seconds each. The recordings are collected from real-world environments and organized into 10 folds to support reproducible training and evaluation. Metadata for each clip is also provided."
+    },
+
+    {
+      type: "list",
+      title: "Dataset Highlights",
+      items: [
+        "8732 labeled audio clips",
+        "10 urban sound categories",
+        "Maximum duration of 4 seconds",
+        "Real-world noisy recordings",
+        "Predefined 10-fold split",
+        "Metadata available in CSV format"
+      ]
+    },
+
+    // 🔊 WAVEFORM
+    {
+      type: "text",
+      title: "Waveform Analysis",
+      content:
+        "Initial exploration was performed using waveform visualizations of audio samples from all 10 classes. This helped in understanding differences in amplitude patterns, signal intensity, and temporal structure across different urban sounds."
+    },
+    {
+      type: "image",
+      image: "/images/urban_sound_waveshow.png",
+      alt: "Combined waveform visualization of urban sound classes"
+    },
+
+    // 🌈 SPECTROGRAM
+    {
+      type: "text",
+      title: "Spectral Analysis",
+      content:
+        "Spectrogram representations were used to analyze how sound energy is distributed across frequencies over time. These visualizations revealed distinctive frequency patterns for different sound categories, which are critical for classification tasks."
+    },
+    {
+      type: "image",
+      image: "/images/urban_sound_specshow.png",
+      alt: "Combined spectrogram of urban sound classes"
+    },
+
+    // 🧠 MODEL SECTION
+    {
+      type: "text",
+      title: "Model Experiments",
+      content:
+        "To evaluate different learning approaches, both Artificial Neural Networks (ANN) and LSTM-based models were implemented. The goal was to compare how well each model captures patterns in environmental audio data."
+    },
+
+    // 📊 ANN
+    {
+      type: "text",
+      title: "ANN Training vs Test Performance",
+      content:
+        "The ANN model was evaluated using training and test accuracy and loss curves. These plots show how the model learns over time and how well it generalizes to unseen data."
+    },
+    {
+      type: "image",
+      image: "/images/ann_performance.png",
+      alt: "ANN training and test accuracy and loss"
+    },
+
+    // 🔁 LSTM
+    {
+      type: "text",
+      title: "LSTM Optimizer Comparison",
+      content:
+        "For the LSTM model, multiple optimizers including Adam, SGD, Nadam, RMSprop, RAdam, and Yogi were compared over 100 epochs. Their performance was analyzed using both training and validation accuracy and loss curves to understand convergence behavior and stability."
+    },
+    {
+      type: "image",
+      image: "/images/lstm-training-combined.png",
+      alt: "LSTM optimizer comparison across training and validation metrics"
+    },
+
+    // 💡 INSIGHTS
+    {
+      type: "cards",
+      title: "Key Insights",
+      items: [
+        {
+          title: "Signal Representation Matters",
+          content:
+            "Waveform and spectrogram analysis helped reveal important differences in temporal and frequency characteristics of urban sounds."
+        },
+        {
+          title: "Model Architecture Matters",
+          content:
+            "ANN provided a strong baseline, while LSTM improved the ability to capture temporal dependencies in audio signals."
+        },
+        {
+          title: "Optimizer Choice Is Critical",
+          content:
+            "Different optimizers showed clear differences in convergence speed, stability, and validation performance."
+        }
+      ]
+    },
+
+    {
+      type: "text",
+      title: "Outcome",
+      content:
+        "This project provided a complete pipeline from raw audio exploration to deep learning model evaluation. It strengthened my understanding of audio feature representation, model comparison, and real-world environmental sound classification."
+    }
+  ]
+},
   {
     title: "Image Classification",
     slug: "image-classification",
