@@ -253,42 +253,158 @@ export const dataAnalysisProjects = [
   ]
 },
   {
-    title: "Image Classification",
-    slug: "image-classification",
-    category: "data",
-    image: "/images/image_analysis.png",
-    github: "https://github.com/yourusername/lion-project",
-    sections: [
-      {
-        type: "text",
-        title: "Project Overview",
-        content:
-          "This project focused on analyzing lion vocalizations using machine learning techniques. The aim was to classify different lion sounds such as roars and grunts from recorded audio data.",
-      },
-      {
-        type: "image",
-        image: "/images/lion-overview.jpg",
-        alt: "Lion project overview",
-      },
-      {
-        type: "text",
-        title: "Data and Feature Extraction",
-        content:
-          "Audio samples were processed using Librosa, and features such as MFCCs were extracted to prepare the data for model training and evaluation.",
-      },
-      {
-        type: "image",
-        image: "/images/lion-mfcc.jpg",
-        alt: "MFCC visualization",
-      },
-      {
-        type: "text",
-        title: "Models and Results",
-        content:
-          "Multiple machine learning and deep learning approaches were compared, including SVM, CNN, and LSTM-based models, to evaluate classification performance.",
-      },
-    ],
-  },
+  title: "Image Classification with Neural Networks",
+  slug: "image-classification-neural-networks",
+  category: "data",
+  image: "/images/image_analysis.png",
+  github: "https://github.com/Prat-375/DeepLearningAssignment/blob/main/Assignment%20_1_MNIST.ipynb",
+  subtitle:
+    "Built neural networks from scratch to classify handwritten digits and fashion images, with additional experiments to improve model performance.",
+  tags: [
+    "Deep Learning",
+    "Computer Vision",
+    "TensorFlow",
+    "ANN",
+    "MNIST",
+    "Fashion MNIST"
+  ],
+  metrics: [
+    { label: "Datasets", value: "MNIST + Fashion MNIST" },
+    { label: "Best Accuracy", value: "97%" },
+    { label: "Focus", value: "From-Scratch Implementation" }
+  ],
+  sections: [
+    {
+      type: "text",
+      title: "Project Overview",
+      content:
+        "This project explores image classification using neural networks implemented from scratch. The work was carried out across two datasets: MNIST for handwritten digits and Fashion MNIST for clothing classification. The goal was to understand how neural networks learn visual features and how model performance changes with dataset complexity."
+    },
+
+    {
+      type: "text",
+      title: "Datasets",
+      content:
+        "MNIST consists of handwritten digits (0–9), while Fashion MNIST contains 10 clothing categories such as shirts, sneakers, and bags. Both datasets use 28×28 grayscale images, allowing a controlled comparison of model behavior across different levels of classification difficulty."
+    },
+
+    {
+      type: "list",
+      title: "Dataset Highlights",
+      items: [
+        "Two benchmark datasets: MNIST and Fashion MNIST",
+        "28×28 grayscale images",
+        "10 classes per dataset",
+        "Training and test splits provided",
+        "Fashion MNIST introduces higher visual complexity"
+      ]
+    },
+
+    {
+      type: "text",
+      title: "Model Architecture",
+      content:
+        "A feedforward neural network was implemented from scratch using TensorFlow operations. The model included two hidden layers with manually initialized weights and biases. Training was performed using GradientTape, allowing full control over forward and backward propagation."
+    },
+
+    {
+      type: "list",
+      title: "Model Details",
+      items: [
+        "Input: 784 features (28×28 image)",
+        "Hidden Layer 1: 128 neurons",
+        "Hidden Layer 2: 256 neurons",
+        "Activations: Sigmoid and Tanh",
+        "Output: 10 classes (Softmax)",
+        "Loss: Cross-Entropy",
+        "Optimizer: Stochastic Gradient Descent"
+      ]
+    },
+    {
+      type: "text",
+      title: "MNIST Baseline Performance",
+      content:
+        "The model was first trained on MNIST to validate the architecture and training pipeline. The network successfully learned digit representations and achieved strong accuracy, demonstrating that the custom implementation was functioning correctly."
+    },
+    {
+      type: "image",
+      image: "/images/mnist-predictions-combined.png",
+      alt: "MNIST predictions from neural network"
+    },
+    {
+      type: "text",
+      title: "Fashion MNIST Classification",
+      content:
+        "The same architecture was applied to Fashion MNIST, which is more challenging due to similarities between clothing categories. This experiment highlighted how model performance drops when visual distinctions become more subtle."
+    },
+    {
+      type: "image",
+      image: "/images/fashion_mnist_input.png",
+      alt: "Fashion MNIST sample images"
+    },
+
+    {
+      type: "text",
+      title: "Fashion MNIST Performance",
+      content:
+        "The model achieved moderate performance on Fashion MNIST, demonstrating that simple feedforward networks struggle with more complex visual features. This emphasized the importance of model selection for real-world image classification tasks."
+    },
+    {
+      type: "image",
+      image: "/images/fashion-predictions-combined.png",
+      alt: "Fashion MNIST predictions"
+    },
+    {
+      type: "text",
+      title: "Model Experimentation and Improvement",
+      content:
+        "To improve performance, additional experiments were conducted on the MNIST dataset by modifying hyperparameters such as learning rate, number of neurons, and training steps. Different activation functions and layer configurations were tested to observe their impact on convergence and accuracy."
+    },
+
+    {
+      type: "text",
+      title: "Improved Training Results",
+      content:
+        "With the updated configuration, the model achieved significantly better performance, reaching approximately 97% test accuracy. The training logs show stable convergence and high accuracy across multiple training steps."
+    },
+
+    {
+      type: "image",
+      image: "/images/mnist-experiment-results.png",
+      alt: "Improved MNIST training accuracy and loss after experimentation"
+    },
+
+    // 💡 INSIGHTS
+    {
+      type: "cards",
+      title: "Key Insights",
+      items: [
+        {
+          title: "From Scratch Builds Deep Understanding",
+          content:
+            "Implementing neural networks manually provided a clear understanding of gradients, weight updates, and training dynamics."
+        },
+        {
+          title: "Dataset Complexity Matters",
+          content:
+            "MNIST is relatively easy due to clear patterns, while Fashion MNIST introduces ambiguity that challenges simple models."
+        },
+        {
+          title: "Hyperparameter Tuning Is Critical",
+          content:
+            "Adjusting learning rate, architecture, and training steps significantly improved model performance."
+        }
+      ]
+    },
+
+    {
+      type: "text",
+      title: "Outcome",
+      content:
+        "This project demonstrates a complete learning pipeline: building neural networks from scratch, evaluating performance across datasets, and improving results through experimentation. It strengthened my understanding of both theoretical and practical aspects of deep learning."
+    }
+  ]
+},
 ];
 
 export const softwareProjects = [
