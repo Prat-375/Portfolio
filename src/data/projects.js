@@ -1,71 +1,117 @@
 export const dataAnalysisProjects = [
   {
-    title: "Lion Vocalization Classification",
-    slug: "lion-vocalization-classification",
-    category: "data",
-    image: "/images/lion_roar.png",
-    github: "https://github.com/Prat-375/Audio-Classification-of-Lion-Sounds",
-    subtitle:
-      "Classifying lion vocalizations such as roars and grunts using audio signal processing and machine learning.",
-    tags: ["Audio Analysis", "Machine Learning", "Librosa", "SVM", "CNN", "LSTM"],
-    metrics: [
-      { label: "Domain", value: "Bioacoustics" },
-      { label: "Data Type", value: "Audio Recordings" },
-      { label: "Models Used", value: "SVM, CNN, LSTM, BiLSTM" },
-    ],
-    sections: [
-      {
-        type: "text",
-        title: "Project Overview",
-        content:
-          "This project focused on classifying lion vocalizations such as Roar, IRoar, and Grunt from recorded audio data. The work involved analyzing long wildlife recordings, extracting meaningful acoustic information, and comparing multiple machine learning approaches."
-      },
-      {
-        type: "image",
-        image: "/images/lion_audio_overview.png",
-        alt: "Waveform and spectrogram of lion audio recording"
-      },
-      {
-        type: "text",
-        title: "Audio Signal Exploration",
-        content:
-          "To better understand differences between vocalization classes, individual sound samples were examined in the time domain. These examples helped reveal how roar, IRoar, and grunt signals differ in intensity, repetition, and temporal structure."
-      },
-      {
-        type: "image",
-        image: "/images/sample_sounds_lion.png",
-        alt: "Sample lion sound waveforms"
-      },
-      {
-        type: "text",
-        title: "Model Performance",
-        content:
-          "Multiple machine learning and deep learning models were evaluated on the processed dataset. The confusion matrix below shows the final multi-class classification performance across the main lion vocalization categories."
-      },
-      {
-        type: "image",
-        image: "/images/confusion_matrix_multiclass.png",
-        alt: "Confusion matrix for lion vocalization classification"
-      },
-      {
-        type: "text",
-        title: "Training Behaviour",
-        content:
-          "Training and validation curves were used to monitor convergence and compare model generalization. These plots helped assess whether performance gains came from meaningful learning or overfitting."
-      },
-      {
-        type: "image",
-        image: "/images/lstm_training.png",
-        alt: "Training accuracy and loss curves"
-      },
-      {
-        type: "text",
-        title: "Key Takeaways",
-        content:
-          "This project showed that audio preprocessing and class-specific signal patterns strongly influence classification performance. It also highlighted that traditional methods such as SVM can remain highly competitive alongside deep learning approaches on structured acoustic features."
-      }
-    ],
-  },
+  title: "Lion Vocalization Classification",
+  slug: "lion-vocalization-classification",
+  category: "data",
+  image: "/images/lion_roar.png",
+  github: "https://github.com/Prat-375/Audio-Classification-of-Lion-Sounds",
+  subtitle:
+    "Analyzing lion vocalizations from real audio recordings and comparing machine learning and deep learning approaches for classifying Roar, IRoar, and Grunt sounds.",
+  tags: [
+    "Audio Analysis",
+    "Machine Learning",
+    "Deep Learning",
+    "Librosa",
+    "SVM",
+    "LSTM"
+  ],
+  metrics: [
+    { label: "Domain", value: "Bioacoustics" },
+    { label: "Classes", value: "Roar, IRoar, Grunt" },
+    { label: "Focus", value: "Audio Classification" }
+  ],
+  sections: [
+    {
+      type: "text",
+      title: "Project Overview",
+      content:
+        "This project focused on classifying lion vocalizations from real-world wildlife recordings. The main goal was to distinguish between Roar, IRoar, and Grunt sounds by analyzing acoustic patterns and evaluating multiple machine learning and deep learning approaches."
+    },
+    {
+      type: "text",
+      title: "Audio Data Exploration",
+      content:
+        "The raw recordings contained multiple lion vocalizations with varying duration, intensity, and acoustic structure. Initial analysis was performed by inspecting the waveforms of representative sound samples, which helped in understanding how the vocalization classes differ in temporal behavior."
+    },
+    {
+      type: "image",
+      image: "/images/sample_sounds_lion.png",
+      alt: "Sample lion sound waveforms"
+    },
+    {
+      type: "text",
+      title: "Waveform and Spectrogram Overview",
+      content:
+        "A combined waveform and spectrogram view was used to study how lion sounds evolve over time and across frequency bands. This made it possible to identify repeated vocal bursts, energy concentration, and class-specific sound patterns directly from the recordings."
+    },
+    {
+      type: "image",
+      image: "/images/lion_audio_overview.png",
+      alt: "Waveform and spectrogram overview of lion audio"
+    },
+    {
+      type: "text",
+      title: "Feature Extraction and Representation",
+      content:
+        "The audio signals were processed using Python-based audio analysis tools to transform raw recordings into structured representations suitable for classification. This step was important for capturing meaningful acoustic information and preparing the data for model training and comparison."
+    },
+    {
+      type: "text",
+      title: "Model Experiments",
+      content:
+        "Multiple classification approaches were explored to understand how well different models can separate lion vocalization classes. The experiments included both classical machine learning methods and deep learning models, allowing a comparison between structured feature-based learning and sequence-based neural approaches."
+    },
+    {
+      type: "text",
+      title: "Multi-Class Classification Performance",
+      content:
+        "The confusion matrix below summarizes the final multi-class classification performance across Roar, IRoar, and Grunt. It highlights how well the model distinguished between the three vocalization classes and where confusion between similar sounds occurred."
+    },
+    {
+      type: "image",
+      image: "/images/confusion_matrix_multiclass.png",
+      alt: "Confusion matrix for lion vocalization classification"
+    },
+    {
+      type: "text",
+      title: "Training Behaviour",
+      content:
+        "Training and validation curves were used to monitor learning progress, convergence, and generalization. These plots made it easier to evaluate whether performance improvements came from meaningful learning or from overfitting to the training data."
+    },
+    {
+      type: "image",
+      image: "/images/lstm_training.png",
+      alt: "Training accuracy and loss curves for lion audio classification"
+    },
+    {
+      type: "cards",
+      title: "Key Insights",
+      items: [
+        {
+          title: "Audio Patterns Are Distinct",
+          content:
+            "Waveform and spectral analysis showed that Roar, IRoar, and Grunt differ in both temporal structure and energy distribution."
+        },
+        {
+          title: "Model Comparison Was Valuable",
+          content:
+            "Comparing classical machine learning methods with deep learning models helped reveal which approaches were most effective for structured wildlife audio data."
+        },
+        {
+          title: "Real Audio Is Challenging",
+          content:
+            "The project highlighted how variation in recording conditions, noise, and overlapping signal behavior can affect classification quality."
+        }
+      ]
+    },
+    {
+      type: "text",
+      title: "Outcome",
+      content:
+        "This project strengthened my understanding of bioacoustic data analysis, audio representation, and comparative model evaluation. It also showed how meaningful insights can be extracted from real animal recordings by combining signal analysis with machine learning."
+    }
+  ]
+},
   {
   title: "Urban Sound Classification",
   slug: "urban-sound-classification",
