@@ -4,36 +4,66 @@ export const dataAnalysisProjects = [
     slug: "lion-vocalization-classification",
     category: "data",
     image: "/images/lion_roar.png",
-    github: "https://github.com/yourusername/lion-project",
+    github: "https://github.com/Prat-375/Audio-Classification-of-Lion-Sounds",
+    subtitle:
+      "Classifying lion vocalizations such as roars and grunts using audio signal processing and machine learning.",
+    tags: ["Audio Analysis", "Machine Learning", "Librosa", "SVM", "CNN", "LSTM"],
+    metrics: [
+      { label: "Domain", value: "Bioacoustics" },
+      { label: "Data Type", value: "Audio Recordings" },
+      { label: "Models Used", value: "SVM, CNN, LSTM, BiLSTM" },
+    ],
     sections: [
       {
         type: "text",
         title: "Project Overview",
         content:
-          "This project focused on analyzing lion vocalizations using machine learning techniques. The aim was to classify different lion sounds such as roars and grunts from recorded audio data.",
+          "This project focused on classifying lion vocalizations such as Roar, IRoar, and Grunt from recorded audio data. The work involved analyzing long wildlife recordings, extracting meaningful acoustic information, and comparing multiple machine learning approaches."
       },
       {
         type: "image",
-        image: "/images/lion-overview.jpg",
-        alt: "Lion project overview",
+        image: "/images/lion_audio_overview.png",
+        alt: "Waveform and spectrogram of lion audio recording"
       },
       {
         type: "text",
-        title: "Data and Feature Extraction",
+        title: "Audio Signal Exploration",
         content:
-          "Audio samples were processed using Librosa, and features such as MFCCs were extracted to prepare the data for model training and evaluation.",
+          "To better understand differences between vocalization classes, individual sound samples were examined in the time domain. These examples helped reveal how roar, IRoar, and grunt signals differ in intensity, repetition, and temporal structure."
       },
       {
         type: "image",
-        image: "/images/lion-mfcc.jpg",
-        alt: "MFCC visualization",
+        image: "/images/sample_sounds_lion.png",
+        alt: "Sample lion sound waveforms"
       },
       {
         type: "text",
-        title: "Models and Results",
+        title: "Model Performance",
         content:
-          "Multiple machine learning and deep learning approaches were compared, including SVM, CNN, and LSTM-based models, to evaluate classification performance.",
+          "Multiple machine learning and deep learning models were evaluated on the processed dataset. The confusion matrix below shows the final multi-class classification performance across the main lion vocalization categories."
       },
+      {
+        type: "image",
+        image: "/images/confusion_matrix_multiclass.png",
+        alt: "Confusion matrix for lion vocalization classification"
+      },
+      {
+        type: "text",
+        title: "Training Behaviour",
+        content:
+          "Training and validation curves were used to monitor convergence and compare model generalization. These plots helped assess whether performance gains came from meaningful learning or overfitting."
+      },
+      {
+        type: "image",
+        image: "/images/lstm_training.png",
+        alt: "Training accuracy and loss curves"
+      },
+      {
+        type: "text",
+        title: "Key Takeaways",
+        content:
+          "This project showed that audio preprocessing and class-specific signal patterns strongly influence classification performance. It also highlighted that traditional methods such as SVM can remain highly competitive alongside deep learning approaches on structured acoustic features."
+      }
     ],
   },
   {
@@ -41,7 +71,7 @@ export const dataAnalysisProjects = [
     slug: "urban-sound-classification",
     category: "data",
     image: "/images/urban_sound.png",
-    github: "https://github.com/yourusername/lion-project",
+    github: "https://github.com/yourusername/urban-sound-classification",
     sections: [
       {
         type: "text",
