@@ -409,24 +409,38 @@ export const dataAnalysisProjects = [
 
 export const softwareProjects = [
   {
-    title: "Portfolio Website",
-    slug: "portfolio",
-    category: "software",
-    description:
-      "A responsive portfolio website built with React and React Router",
-    longDescription:
-      "A multi-page portfolio website built using React and React Router. The project demonstrates component-based architecture, client-side routing, and responsive design principles. It serves as an online resume and showcase of projects.",
-    tech: ["React", "JavaScript", "CSS", "React Router", "Vite"],
-    highlights: [
-      "Built as a multi-page React application",
-      "Used reusable components for clean structure",
-      "Designed for portfolio and resume sharing",
-      "Deployed online for live access",
-    ],
-    image: "images/portfolio.png",
-    github: "https://github.com/Prat-375/portfolio",
-    demo: "https://portfolio-sandy-seven-vacokmuqoo.vercel.app/",
-  },
+  title: "Bhasha Abhyasa – German Learning Platform",
+  slug: "bhasha-abhyasa",
+  category: "software",
+  description:
+    "A full-stack German learning platform with practice exercises, user authentication, and progress tracking.",
+  longDescription:
+    "Bhasha Abhyasa is a full-stack web application designed to help users practice German language skills across different CEFR levels (A1–C1). The platform provides structured learning through themes and interactive practice modes such as multiple-choice questions. It includes user authentication, real-time scoring, and persistent progress tracking using MongoDB. The frontend is built with React and Vite, while the backend uses Node.js, Express, and MongoDB. The application is deployed with Vercel (frontend) and Render (backend), demonstrating end-to-end full-stack development and deployment.",
+  tech: [
+    "React",
+    "Vite",
+    "JavaScript",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "JWT Authentication",
+    "CSS",
+    "Vercel",
+    "Render"
+  ],
+  highlights: [
+    "Built a full-stack application with React frontend and Node.js backend",
+    "Implemented user authentication using JWT",
+    "Designed MongoDB schemas for themes, questions, and user progress",
+    "Created interactive practice system with scoring and result evaluation",
+    "Integrated frontend and backend with REST APIs",
+    "Handled CORS and environment variables for production deployment",
+    "Deployed frontend on Vercel and backend on Render",
+  ],
+  image: "images/bhasha-abhyasa.png",
+  github: "https://github.com/Prat-375/Bhasha-Abhyasa",
+  demo: "https://bhasha-abhyasa.vercel.app/",
+},
   {
     title: "Green Basket",
     slug: "green-basket",
