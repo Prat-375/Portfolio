@@ -539,6 +539,33 @@ export const personalProjects = [
     demo: "https://huggingface.co/spaces/prateekChetan/chatbot_prateek",
   },
   {
+  title: "JobHunter — Automated Job Tracker",
+  slug: "jobhunter",
+  category: "personal",
+  description:
+    "A full-stack job hunting dashboard that auto-scrapes daily job listings, tracks applications with a visual calendar, and plays motivational sounds on status updates.",
+  longDescription:
+    "Built a personal job tracking platform to automate the daily grind of job hunting in Germany. The app scrapes Data Analyst and DevOps Engineer roles daily at 8 AM Berlin time using JSearch and Remotive APIs, filters results against a personal CV profile for relevance scoring, and saves top matches to MongoDB. Features a carnival-themed React frontend with an interactive calendar showing application progress, dropdown status tracking (New → Applied → Interview → Offer/Rejected), undo functionality, and Web Audio API sound effects with speech synthesis for motivational feedback on every status change. Deployed backend on Render with a node-cron scheduler and frontend on Vercel.",
+  tech: [
+    "React", "Vite", "Node.js", "Express", "MongoDB", "Mongoose",
+    "JSearch API", "Remotive API", "RapidAPI", "node-cron",
+    "Web Audio API", "Speech Synthesis API", "Vercel", "Render"
+  ],
+  highlights: [
+    "Automated daily job scraping at 8 AM Berlin time using node-cron",
+    "CV profile-based relevance scoring to filter irrelevant job posts",
+    "Interactive calendar with per-day application progress indicators",
+    "Dropdown status tracker with undo support and 6-second revert window",
+    "Motivational sound effects and speech synthesis on every status change",
+    "Confetti animation triggered on job offer status",
+    "Deployed full-stack app on Render (backend) and Vercel (frontend)",
+    "Filters senior roles, non-English posts, and irrelevant job types automatically",
+  ],
+  image: "images/jobhunter.png",
+  github: "https://github.com/Prat-375/JobHunt",
+  demo: "https://job-hunt-flax-iota.vercel.app/",
+},
+  {
     title: "Todo WebApp",
     slug: "todo-webapp",
     category: "personal",
